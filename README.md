@@ -1,58 +1,63 @@
-# Vitrine publique — dossier isolé
+# Plateforme IA locale pour développeurs
 
-**Mission :** afficher images + GIF + texte marketing (problème, solution, technologies).
+**Gateway OpenAI · LLM local (Ollama) · Monitoring GPU · Cursor / VS Code / Codex · Sans dépendance cloud**
 
-**Pas de code.** Pas de backend. Pas de lien vers l'app admin.
+Deux MVP d'une plateforme IA souveraine : passerelle locale compatible avec les IDE de développement, supervision matérielle, déploiement multimodal — sans exposer le code source privé.
+
+🌐 **Vitrine en ligne :** [ta-dev-ai.github.io/snorbik-ai-platform](https://ta-dev-ai.github.io/snorbik-ai-platform/)
 
 ---
 
-## Ouvrir la vitrine
+## Démonstration (GIF)
 
-Double-cliquez :
+![Démonstration — Plateforme IA locale Snorbik](assets/gifs/demo-2.gif)
 
-```text
-public/OPEN_VITRINE.bat
+*Enregistrement écran — gateway, modèles locaux et monitoring (août 2026)*
+
+---
+
+## Le problème
+
+- Coûts cloud et dépendance aux API tierces pour le développement IA
+- Risque de fuite de code et de données sensibles vers des serveurs externes
+- Difficulté à déployer et piloter l'IA locale (LLM, vision, audio) depuis les IDE
+
+---
+
+## Ce qu'on a construit
+
+| MVP | Description |
+| --- | ----------- |
+| **v1** | Gateway locale + agents MCP + orchestration cloud hybride |
+| **v2** | Centre d'infrastructure IA : catalogue modèles, monitoring GPU, gateway unifiée |
+
+---
+
+## Captures d'écran
+
+| MVP v1 — Gateway locale | MVP v2 — Gateway OpenAI |
+| --- | --- |
+| ![MVP v1 Gateway](assets/screenshots/v1-gateway-dashboard.svg) | ![MVP v2 Gateway OpenAI](assets/screenshots/v2-gateway-openai.svg) |
+
+| MVP v2 — Monitoring GPU | MVP v2 — Model Inspector |
+| --- | --- |
+| ![Monitoring GPU](assets/screenshots/v2-hardware-monitor.svg) | ![Model Inspector](assets/screenshots/v2-model-inspector.svg) |
+
+---
+
+## Technologies
+
+`Python` · `FastAPI` · `IA locale` · `Ollama` · `HuggingFace` · `MCP` · `Monitoring GPU` · `Cursor` · `Codex`
+
+---
+
+## Structure
+
+```
+public/
+├── index.html          ← vitrine web (GitHub Pages)
+├── assets/gifs/        ← démonstrations animées
+└── assets/screenshots/ ← captures MVP
 ```
 
-Ou ouvrez `public/index.html` dans le navigateur.
-
-Aucun serveur requis.
-
----
-
-## Médias actuels
-
-| Fichier                    | Dossier               |
-| -------------------------- | --------------------- |
-| `demo-1.gif`               | `assets/gifs/`        |
-| `v1-gateway-dashboard.svg` | `assets/screenshots/` |
-| `v2-gateway-openai.svg`    | `assets/screenshots/` |
-| `v2-hardware-monitor.svg`  | `assets/screenshots/` |
-| `v2-model-inspector.svg`   | `assets/screenshots/` |
-
-Pour ajouter un GIF : déposez-le dans `assets/gifs/` puis mettez à jour `index.html`.
-
----
-
-## Publier sur GitHub Pages (CV / LinkedIn)
-
-Publiez **uniquement** le contenu de `public/` — jamais `back/` ni `front/`.
-
-```powershell
-# 1. Connexion (une fois)
-gh auth login
-
-# 2. Repo vitrine dédié (recommandé)
-cd AI_INFRA_CENTER\public
-gh repo create snorbik-ai-vitrine --public --source=. --remote=origin
-git add -A
-git commit -m "feat: vitrine publique avec demo GIF"
-git push -u origin main
-```
-
-Puis GitHub → **Settings → Pages → Deploy from branch `main` / root**.
-
-**Attention :** `demo-1.gif` fait ~123 Mo. GitHub refuse les fichiers > 100 Mo.
-Options : compresser le GIF (ezgif.com) ou utiliser Git LFS avant le push.
-
-Lien CV : `https://<votre-user>.github.io/snorbik-ai-vitrine/`
+Code source applicatif : **privé** — ce repo contient uniquement la vitrine publique.
