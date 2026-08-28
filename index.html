@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme IA locale pour développeurs — Snorbik</title>
+  <meta name="description"
+    content="Gateway OpenAI locale · LLM (Ollama) · Monitoring GPU · Compatible Cursor, VS Code, Codex. IA souveraine sans dépendance cloud.">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #111827;
+      --border: #263244;
+      --text: #d6deeb;
+      --muted: #8b98aa;
+      --accent: #3794ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    section h2 {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+    }
+
+    .gallery figcaption {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .pill {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Plateforme IA locale pour développeurs</h1>
+    <p class="sub">Gateway OpenAI · LLM local (Ollama) · Monitoring GPU · Cursor / VS Code / Codex · Sans dépendance cloud</p>
+
+    <section>
+      <h2>Le problème</h2>
+      <ul>
+        <li>Coûts cloud et dépendance aux API tierces pour le développement IA</li>
+        <li>Risque de fuite de code et de données sensibles vers des serveurs externes</li>
+        <li>Difficulté à déployer et piloter l'IA locale (LLM, vision, audio) depuis les IDE</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ce qu'on a construit</h2>
+      <p>Deux MVP d'une plateforme IA souveraine : passerelle locale compatible avec les outils de développement
+        (Cursor, Claude, VS Code, Codex), supervision matérielle, déploiement multimodal — sans exposer le code source.
+      </p>
+      <ul>
+        <li><strong>MVP v1</strong> — Gateway locale + agents MCP + orchestration cloud hybride</li>
+        <li><strong>MVP v2</strong> — Centre d'infrastructure IA : catalogue modèles, monitoring GPU, gateway unifiée
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Démonstrations (GIF)</h2>
+      <div class="gallery">
+        <figure>
+          <img src="assets/gifs/demo-2.gif" alt="Démonstration Snorbik AI Platform — démo légère">
+          <figcaption>Plateforme IA — démo (août 2026)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Captures d'écran</h2>
+      <div class="gallery">
+        <figure>
+          <img src="assets/screenshots/v1-gateway-dashboard.svg" alt="MVP v1 — Gateway dashboard">
+          <figcaption>MVP v1 — Gateway locale</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/v2-gateway-openai.svg" alt="MVP v2 — Gateway OpenAI compatible">
+          <figcaption>MVP v2 — Gateway OpenAI</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/v2-hardware-monitor.svg" alt="MVP v2 — Monitoring matériel GPU">
+          <figcaption>MVP v2 — Monitoring GPU</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/v2-model-inspector.svg" alt="MVP v2 — Inspecteur de modèles">
+          <figcaption>MVP v2 — Model Inspector</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technologies (aperçu public)</h2>
+      <div class="pills">
+        <span class="pill">Python</span>
+        <span class="pill">FastAPI</span>
+        <span class="pill">IA locale</span>
+        <span class="pill">Ollama</span>
+        <span class="pill">HuggingFace</span>
+        <span class="pill">MCP</span>
+        <span class="pill">Monitoring GPU</span>
+        <span class="pill">Cursor / Codex</span>
+      </div>
+      <p style="margin-top:12px;font-size:12px;">Détails d'implémentation et architecture interne : non publics.</p>
+    </section>
+
+    <footer>
+      Snorbik AI Platform · <a href="https://github.com/ta-dev-ai/snorbik-ai-platform"
+        style="color:var(--accent);">GitHub</a>
+    </footer>
+  </div>
+</body>
+
+</html>

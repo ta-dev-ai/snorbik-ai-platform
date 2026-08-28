@@ -1,0 +1,8 @@
+# Placez vos GIF de demo ici (ScreenToGif, ShareX, Win+G)
+
+Exemples :
+- demo-admin-dashboard.gif
+- demo-model-inspector.gif
+- demo-gateway-openai.gif
+
+Puis referencez-les dans public/index.html et ce README.
