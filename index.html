@@ -5,12 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snorbik AI Platform — Plateforme IA locale pour développeurs</title>
-  <meta name="description"
-    content="Gateway OpenAI locale, LLM Ollama, monitoring GPU. Projet IA pour Cursor, VS Code et Codex — sans dépendance cloud.">
+  <meta name="description" content="Plateforme IA locale pour développeurs — LLM en local, Gateway OpenAI, Ollama.">
   <style>
     :root {
       --bg: #0d1117;
-      --panel: #111827;
       --border: #263244;
       --text: #d6deeb;
       --muted: #8b98aa;
@@ -42,61 +40,20 @@
     .sub {
       color: var(--muted);
       font-size: 14px;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
-
-    section { margin-bottom: 36px; }
-
-    section h2 {
-      font-size: 1rem;
-      color: #fff;
-      margin-bottom: 10px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 6px;
-    }
-
-    p, li { color: var(--muted); font-size: 14px; }
-
-    ul { padding-left: 18px; margin-top: 8px; }
-    li { margin-bottom: 6px; }
 
     .demo img {
       width: 100%;
       border-radius: 8px;
       border: 1px solid var(--border);
-      margin-top: 8px;
-    }
-
-    .demo-cap {
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 8px;
-      text-align: center;
-    }
-
-    .pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .pill {
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 4px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      color: var(--accent);
     }
 
     footer {
-      margin-top: 48px;
+      margin-top: 32px;
       font-size: 12px;
       color: var(--muted);
       text-align: center;
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
     }
 
     footer a { color: var(--accent); }
@@ -106,42 +63,10 @@
 <body>
   <div class="wrap">
     <h1>Snorbik AI Platform</h1>
-    <p class="sub">Plateforme IA locale pour développeurs — Gateway OpenAI · Ollama · Monitoring GPU · Cursor / VS Code / Codex</p>
-
-    <section class="demo">
-      <h2>Démo</h2>
-      <img src="assets/gifs/demo-2.gif" alt="Démo Snorbik AI Platform">
-      <p class="demo-cap">Gateway locale, modèles et monitoring matériel en direct</p>
-    </section>
-
-    <section>
-      <h2>C'est quoi ?</h2>
-      <p>Coder avec l'IA passe presque toujours par des API cloud. Ça coûte cher, expose le code, et dépend d'une connexion externe.</p>
-      <p style="margin-top:10px;"><strong style="color:#fff;">Snorbik AI Platform</strong> est une infrastructure IA installée en local qui se comporte comme une API OpenAI — les IDE utilisent des modèles locaux, les données restent sur la machine.</p>
-    </section>
-
-    <section>
-      <h2>Ce que fait la plateforme</h2>
-      <ul>
-        <li><strong>MVP v1</strong> — Gateway locale compatible OpenAI + agents MCP</li>
-        <li><strong>MVP v2</strong> — Catalogue modèles, monitoring GPU/CPU/RAM, interface de supervision</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Stack technique</h2>
-      <div class="pills">
-        <span class="pill">Python</span>
-        <span class="pill">FastAPI</span>
-        <span class="pill">Ollama</span>
-        <span class="pill">HuggingFace</span>
-        <span class="pill">MCP</span>
-        <span class="pill">Monitoring GPU</span>
-        <span class="pill">Cursor</span>
-        <span class="pill">Codex</span>
-      </div>
-    </section>
-
+    <p class="sub">Plateforme IA locale pour développeurs — LLM en local · Gateway OpenAI · Ollama · Cursor / VS Code / Codex</p>
+    <div class="demo">
+      <img src="assets/gifs/demo-2.gif" alt="Snorbik AI Platform">
+    </div>
     <footer>
       <a href="https://github.com/ta-dev-ai/snorbik-ai-platform">GitHub</a>
     </footer>
