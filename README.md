@@ -1,63 +1,58 @@
-# Plateforme IA locale pour développeurs
+# Snorbik AI Platform
 
-**Gateway OpenAI · LLM local (Ollama) · Monitoring GPU · Cursor / VS Code / Codex · Sans dépendance cloud**
+**Plateforme IA locale pour développeurs** — utiliser des LLM en local dans Cursor, VS Code ou Codex, sans envoyer le code vers le cloud.
 
-Deux MVP d'une plateforme IA souveraine : passerelle locale compatible avec les IDE de développement, supervision matérielle, déploiement multimodal — sans exposer le code source privé.
-
-🌐 **Vitrine en ligne :** [ta-dev-ai.github.io/snorbik-ai-platform](https://ta-dev-ai.github.io/snorbik-ai-platform/)
+> Projet personnel · Python / FastAPI · Gateway OpenAI compatible · Ollama · Monitoring GPU
 
 ---
 
-## Démonstration (GIF)
+## Démo
 
-![Démonstration — Plateforme IA locale Snorbik](assets/gifs/demo-2.gif)
+![Démo Snorbik AI Platform — gateway locale, modèles et monitoring](assets/gifs/demo-2.gif)
 
-*Enregistrement écran — gateway, modèles locaux et monitoring (août 2026)*
-
----
-
-## Le problème
-
-- Coûts cloud et dépendance aux API tierces pour le développement IA
-- Risque de fuite de code et de données sensibles vers des serveurs externes
-- Difficulté à déployer et piloter l'IA locale (LLM, vision, audio) depuis les IDE
+**Ce que montre la vidéo :** une gateway IA locale branchée sur l'IDE, le catalogue de modèles et le suivi matériel (GPU) en temps réel.
 
 ---
 
-## Ce qu'on a construit
+## C'est quoi ?
 
-| MVP | Description |
-| --- | ----------- |
-| **v1** | Gateway locale + agents MCP + orchestration cloud hybride |
-| **v2** | Centre d'infrastructure IA : catalogue modèles, monitoring GPU, gateway unifiée |
+Aujourd'hui, coder avec l'IA passe presque toujours par des API cloud (OpenAI, Anthropic…). Ça coûte cher, ça expose le code, et ça dépend d'une connexion externe.
+
+**Snorbik AI Platform**, c'est ma réponse : une infrastructure IA **installée en local** qui se comporte comme une API OpenAI, pour que les outils de dev (Cursor, VS Code, Codex) puissent utiliser des modèles locaux (Ollama, HuggingFace) — **données et code restent sur la machine**.
 
 ---
 
-## Captures d'écran
+## Ce que fait la plateforme
 
-| MVP v1 — Gateway locale | MVP v2 — Gateway OpenAI |
+**MVP v1 — Gateway locale**
+- API compatible OpenAI (`/v1/chat/completions`)
+- Agents MCP pour connecter des outils externes
+- Mode hybride local + cloud si besoin
+
+**MVP v2 — Centre d'infrastructure IA**
+- Catalogue et inspection des modèles installés
+- Monitoring GPU / CPU / RAM en direct
+- Interface web de supervision (FastAPI + frontend)
+
+---
+
+## Stack technique
+
+| Domaine | Outils |
+| ------- | ------ |
+| Backend | Python, FastAPI |
+| IA locale | Ollama, HuggingFace |
+| Intégration IDE | OpenAI-compatible API, MCP |
+| Monitoring | psutil, GPU telemetry |
+| Frontend | JavaScript, thème VS Code |
+
+---
+
+## Liens
+
+| | |
 | --- | --- |
-| ![MVP v1 Gateway](assets/screenshots/v1-gateway-dashboard.svg) | ![MVP v2 Gateway OpenAI](assets/screenshots/v2-gateway-openai.svg) |
+| **Démo web** | [ta-dev-ai.github.io/snorbik-ai-platform](https://ta-dev-ai.github.io/snorbik-ai-platform/) |
+| **Repo** | [github.com/ta-dev-ai/snorbik-ai-platform](https://github.com/ta-dev-ai/snorbik-ai-platform) |
 
-| MVP v2 — Monitoring GPU | MVP v2 — Model Inspector |
-| --- | --- |
-| ![Monitoring GPU](assets/screenshots/v2-hardware-monitor.svg) | ![Model Inspector](assets/screenshots/v2-model-inspector.svg) |
-
----
-
-## Technologies
-
-`Python` · `FastAPI` · `IA locale` · `Ollama` · `HuggingFace` · `MCP` · `Monitoring GPU` · `Cursor` · `Codex`
-
----
-
-## Structure
-
-```
-public/
-├── index.html          ← vitrine web (GitHub Pages)
-├── assets/gifs/        ← démonstrations animées
-└── assets/screenshots/ ← captures MVP
-```
-
-Code source applicatif : **privé** — ce repo contient uniquement la vitrine publique.
+*Ce dépôt = démonstration publique du projet (GIF + description). Le code source applicatif complet reste privé.*
