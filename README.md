@@ -8,7 +8,7 @@
 
 ![Démo ModelDesk](assets/marketing/modeldesk-demo.gif)
 
-**▶ [Voir la démo vidéo (MP4)](assets/marketing/modeldesk-demo.mp4)** · **📺 [YouTube @SNORBIKStudio](https://www.youtube.com/@SNORBIKStudio)**
+**📺 [YouTube @SNORBIKStudio](https://www.youtube.com/@SNORBIKStudio)**
 
 ---
 
@@ -17,7 +17,7 @@
 | Méthode | Action |
 |---------|--------|
 | **Local** | Double-clic `OPEN_VITRINE.bat` |
-| **Navigateur** | Ouvrir [`index.html`](index.html) — bannière + lecteur vidéo |
+| **Navigateur** | Ouvrir [`index.html`](index.html) — bannière + GIF démo |
 | **Web public** | GitHub → **Settings → Pages** → branch `main` → site en ligne |
 
 ---
