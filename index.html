@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snorbik AI Platform — Plateforme IA locale pour développeurs</title>
-  <meta name="description" content="Plateforme IA locale pour développeurs — LLM en local, Gateway OpenAI, Ollama.">
+  <title>ModelDesk by Snorbik — Cockpit IA locale</title>
+  <meta name="description" content="Vos outils IA. Vos modèles. Votre contrôle. Pilotez vos modèles en local ou hybride.">
   <style>
     :root {
       --bg: #0d1117;
@@ -14,9 +13,7 @@
       --muted: #8b98aa;
       --accent: #3794ff;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: system-ui, sans-serif;
       background: var(--bg);
@@ -24,53 +21,77 @@
       line-height: 1.65;
       font-size: 15px;
     }
-
     .wrap {
-      max-width: 760px;
+      max-width: 820px;
       margin: 0 auto;
       padding: 48px 20px 64px;
     }
-
-    h1 {
-      font-size: 1.75rem;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-
-    .sub {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 24px;
-    }
-
-    .demo img {
+    h1 { font-size: 1.85rem; color: #fff; margin-bottom: 6px; }
+    .brand { color: var(--accent); font-weight: 700; }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+    .hero img, video {
       width: 100%;
       border-radius: 8px;
       border: 1px solid var(--border);
+      margin-bottom: 20px;
     }
-
+    .pillars {
+      display: grid;
+      gap: 12px;
+      margin: 28px 0;
+    }
+    .pillar {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #111827;
+    }
+    .pillar strong { color: #fff; display: block; margin-bottom: 4px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .links a:hover { border-color: var(--accent); }
     footer {
-      margin-top: 32px;
+      margin-top: 40px;
       font-size: 12px;
       color: var(--muted);
       text-align: center;
     }
-
-    footer a { color: var(--accent); }
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <h1>Snorbik AI Platform</h1>
-    <p class="sub">Plateforme IA locale pour développeurs — LLM en local · Gateway OpenAI · Ollama · Cursor / VS Code / Codex</p>
-    <div class="demo">
-      <img src="assets/gifs/demo-2.gif" alt="Snorbik AI Platform">
+    <h1><span class="brand">ModelDesk</span> by Snorbik</h1>
+    <p class="sub">Vos outils IA. Vos modèles. Votre contrôle. — Exécutez vos modèles en local ou hybride, sans dépendre du cloud.</p>
+
+    <div class="hero">
+      <img src="assets/marketing/modeldesk-banner.png" alt="ModelDesk — bureau de pilotage IA">
+      <video controls poster="assets/marketing/modeldesk-banner.png">
+        <source src="assets/marketing/modeldesk-demo.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
     </div>
+
+    <div class="pillars">
+      <div class="pillar"><strong>🔒 Vos données restent chez vous</strong> Sécurité et confidentialité garanties.</div>
+      <div class="pillar"><strong>💰 Maîtrisez vos coûts</strong> Pas de frais cachés, pas d'abonnement cloud obligatoire.</div>
+      <div class="pillar"><strong>🆓 Liberté totale</strong> Cursor, Cline, Claude Code — vos modèles, vos règles.</div>
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/ta-dev-ai/ModelDesk">Code source (ModelDesk)</a>
+      <a href="mailto:contact@snorbik.com">contact@snorbik.com</a>
+    </div>
+
     <footer>
-      <a href="https://github.com/ta-dev-ai/snorbik-ai-platform">GitHub</a>
+      Snorbik · MVP en construction — développé en public
     </footer>
   </div>
 </body>
-
 </html>
