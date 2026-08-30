@@ -2,7 +2,7 @@
 
 **Vos outils IA. Vos modèles. Votre contrôle.**
 
-> Landing marketing ModelDesk — **repo public** séparé du code ([ModelDesk](https://github.com/ta-dev-ai/ModelDesk)).
+> Dossier : [`../modeldesk-vitrine-publique/`](../modeldesk-vitrine-publique/) · GitHub : [snorbik-ai-platform](https://github.com/ta-dev-ai/snorbik-ai-platform)
 
 ![ModelDesk by Snorbik](assets/marketing/modeldesk-banner.png)
 
