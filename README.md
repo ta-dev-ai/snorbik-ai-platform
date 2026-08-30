@@ -6,6 +6,8 @@
 
 ![ModelDesk by Snorbik](assets/marketing/modeldesk-banner.png)
 
+![Démo ModelDesk](assets/marketing/modeldesk-demo.gif)
+
 **▶ [Voir la démo vidéo (MP4)](assets/marketing/modeldesk-demo.mp4)** · **📺 [YouTube @SNORBIKStudio](https://www.youtube.com/@SNORBIKStudio)**
 
 ---
